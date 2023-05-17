@@ -1,7 +1,5 @@
-﻿using Microsoft.VisualBasic;
-using Iot.Device.DHTxx;
+﻿using Iot.Device.DHTxx;
 using System.Device.Gpio;
-using Microsoft.AspNetCore.SignalR;
 
 
 namespace Raspberry.Models
@@ -20,8 +18,6 @@ namespace Raspberry.Models
             _controller.OpenPin(RelayPin, PinMode.Output);
             _controller.Write(RelayPin, PinValue.Low);
         }
-
-
 
         public void RelayOn()
         {
